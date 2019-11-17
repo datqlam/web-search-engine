@@ -1,15 +1,15 @@
-package hello;
+package search;
 
 import java.util.List;
 
-public class Greeting {
+public class SearchResult {
 
     private long id;
     private String content;
     private long total1;
     private List<Hit> hits;
 
-    public Greeting(long id, String content) {
+    public SearchResult(long id, String content) {
         this.id = id;
         this.content = content;
     }

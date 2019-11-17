@@ -1,4 +1,4 @@
-package hello;
+package search;
 
 public class Metadata {
 	private String title;

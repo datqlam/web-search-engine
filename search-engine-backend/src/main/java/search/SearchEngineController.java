@@ -1,4 +1,4 @@
-package hello;
+package search;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class GreetingController {
+public class SearchEngineController {
 
     private static final String template = "Hello, %s!";
     private final AtomicLong counter = new AtomicLong();
@@ -22,13 +22,13 @@ public class GreetingController {
 		response.setHeader("Access-Control-Allow-Origin", "*");
 	}    
 
-    @RequestMapping("/greeting")
-    public Greeting greeting(@RequestParam(value="name", defaultValue="World") String name) {
-    	Greeting greeting = new Greeting(counter.incrementAndGet(), String.format(template, name));
-    	greeting.setTotal1(12345L);
+    @RequestMapping("/search")
+    public SearchResult search(@RequestParam(value="name", defaultValue="World") String name) {
+    	SearchResult result = new SearchResult(counter.incrementAndGet(), String.format(template, name));
+    	result.setTotal1(12345L);
     	List<Hit> hits = new ArrayList<> ();
     	hits.add(new Hit(new Metadata("test", "testDecsription")));
-    	greeting.setHits(hits);
-        return greeting;
+    	result.setHits(hits);
+        return result;
     }
 }
