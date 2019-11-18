@@ -59,7 +59,7 @@ export class InvenioSearchApi {
   search = async stateQuery => {
     console.log('stateQuery', stateQuery)
     const response = await this.http.request({
-      // params: stateQuery,
+      params: stateQuery,
     });
     console.log(response);
     return this.responseSerializer.serialize(response.data);

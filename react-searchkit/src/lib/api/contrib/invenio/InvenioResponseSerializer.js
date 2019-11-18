@@ -84,7 +84,7 @@ export class InvenioResponseSerializer {
     return {
       // aggregations: this._serializeAggregations(payload.aggregations || {}),
       hits: payload.hits,
-      total: payload.total1,
+      total: payload.total,
     };
   };
 }

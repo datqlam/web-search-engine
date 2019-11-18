@@ -108,7 +108,7 @@ class App extends Component {
     ];
 
     const searchApi = new InvenioSearchApi({
-      url: 'http://localhost:8080/greeting',
+      url: 'http://192.168.211.132:8080/search',
       timeout: 5000,
       headers: { Accept: 'application/json' },
     });
