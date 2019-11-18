@@ -30,6 +30,7 @@ export default (state = {}, action) => {
           // aggregations: action.payload.aggregations,
           hits: action.payload.hits,
           total: action.payload.total,
+          suggestedSearch: action.payload.suggestedSearch
         },
         error: {},
       };
@@ -41,6 +42,7 @@ export default (state = {}, action) => {
           // aggregations: {},
           hits: [],
           total: 0,
+          suggestedSearch: "",
         },
         error: action.payload,
       };

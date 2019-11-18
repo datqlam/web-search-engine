@@ -10,6 +10,7 @@ export { ActiveAggregations } from './ActiveAggregations';
 export { Aggregator } from './Aggregator';
 export { AutocompleteSearchBar } from './AutocompleteSearchBar';
 export { Count } from './Count';
+export { SuggestSearch } from './SuggestSearch';
 export { EmptyResults } from './EmptyResults';
 export { Error } from './Error';
 export { LayoutSwitcher } from './LayoutSwitcher';

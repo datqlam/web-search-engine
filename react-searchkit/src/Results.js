@@ -12,6 +12,7 @@ import { Grid, Icon, Label } from 'semantic-ui-react';
 import {
   ActiveAggregations,
   Count,
+  SuggestSearch,
   LayoutSwitcher,
   Pagination,
   ResultsMultiLayout,
@@ -22,8 +23,9 @@ import {
 const Spacer = connect(state => ({
   loading: state.results.loading,
   total: state.results.data.total,
-}))(({ text, loading, total }) =>
-  loading || total === 0 ? null : (
+  suggestedSearch : state.results.data.suggestedSearch
+}))(({ text, loading, total, suggestedSearch }) =>
+  loading || total === 0 || suggestedSearch === undefined ? null : (
     <span style={{ margin: '0 0.5em' }}>{text}</span>
   )
 );
@@ -80,7 +82,7 @@ export class Results extends Component {
     return (
       <div>
         {/* <ActiveAggregationsSpacer /> */}
-        <Grid relaxed verticalAlign="middle">
+        <Grid relaxed verticalAlign="middle" style={{ padding: '0em 0' }}>
           <Grid.Column width={8}>
             <span>
               <Spacer text="Found" />
@@ -99,6 +101,16 @@ export class Results extends Component {
               <Spacer text="results per page" />
             </span>
             <Spacer />
+          </Grid.Column>
+        </Grid>
+        <Grid relaxed verticalAlign="middle" style={{ padding: '0em 0',marginTop: '0' }}>
+          <Grid.Column width={8}>
+            <span>
+              <Spacer text="Showing results for" />
+              <SuggestSearch />
+              {/* <Spacer text="results sorted by" />
+              <Sort values={this.sortValues} /> */}
+            </span>
           </Grid.Column>
         </Grid>
         <Grid relaxed style={{ padding: '2em 0' }}>

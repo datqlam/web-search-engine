@@ -5,6 +5,7 @@ import java.util.List;
 public class ResponsedSearchResult {
 
 	private long total;
+	private String suggestedSearch;
     private List<Hit> hits;
 
 	public long getTotal() {
@@ -13,6 +14,14 @@ public class ResponsedSearchResult {
 
 	public void setTotal(long total) {
 		this.total = total;
+	}
+	
+	public String getSuggestedSearch() {
+		return suggestedSearch;
+	}
+
+	public void setSuggestedSearch(String suggestedSearch) {
+		this.suggestedSearch = suggestedSearch;
 	}
 
 	public List<Hit> getHits() {

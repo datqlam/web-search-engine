@@ -126,7 +126,7 @@ class App extends Component {
                 <Grid columns="equal" verticalAlign="middle">
                   <Grid.Row>
                     <Grid.Column width={5}>
-                      <Header as="h1" content="React-SearchKit" inverted />
+                      <Header as="h1" content="Simple-WSE" inverted />
                     </Grid.Column>
                     <Grid.Column width={10} textAlign="center">
                       <SearchBar />

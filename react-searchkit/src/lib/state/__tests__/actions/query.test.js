@@ -33,6 +33,7 @@ const config = {
       aggregations: [],
       hits: [],
       total: 0,
+      suggestedSearch: "",
     }),
   },
 };

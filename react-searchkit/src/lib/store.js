@@ -29,6 +29,7 @@ export function configureStore(appConfig) {
     data: {
       hits: [],
       total: 0,
+      suggestedSearch: "",
       aggregations: {},
     },
     error: {},

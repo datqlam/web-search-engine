@@ -153,6 +153,7 @@ export const executeQuery = (updateUrlQueryString = true) => {
           // aggregations: response.aggregations,
           hits: response.hits,
           total: response.total,
+          suggestedSearch: response.suggestedSearch
         },
       });
     } catch (reason) {

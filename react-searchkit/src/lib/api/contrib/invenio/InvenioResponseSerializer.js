@@ -85,6 +85,7 @@ export class InvenioResponseSerializer {
       // aggregations: this._serializeAggregations(payload.aggregations || {}),
       hits: payload.hits,
       total: payload.total,
+      suggestedSearch: payload.suggestedSearch
     };
   };
 }
