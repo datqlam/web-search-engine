@@ -47,18 +47,19 @@ and respond with a link:/understanding/JSON[JSON] representation of a greeting:
 
 == What you'll need
 Go through this tutorial https://spring.io/guides/gs/rest-service/ to build a simple spring boot REST service
+
 Install mvn
 ----
 sudo apt install maven
 ----
-Run the application by using
+Run the service by using
 ----
 ./mvnw spring-boot:run
 ----
 Alternatively, build the JAR file and then run it
 ----
 ./mvnw clean package
-java -jar target/gs-rest-service-0.1.0.jar
+java -jar target/search-engine-backend-0.1.0.jar
 ----
 
 == Summary
