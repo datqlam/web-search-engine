@@ -1,13 +1,4 @@
-This simple search engine UI extends React-SearchKit(https://inveniosoftware.github.io/react-searchkit/docs/getting-started) (a free software; which we can redistribute it and/or modify it under the terms of the MIT License; see LICENSE file for more details.)
-
-# React-SearchKit
-
-[![Build Status](https://img.shields.io/travis/inveniosoftware/react-searchkit)](https://travis-ci.org/inveniosoftware/react-searchkit)
-[![Release](https://img.shields.io/npm/v/react-searchkit)](https://www.npmjs.com/package/react-searchkit)
-[![License](https://img.shields.io/github/license/inveniosoftware/react-searchkit)](https://github.com/inveniosoftware/react-searchkit/blob/master/LICENSE)
-
-React-SearchKit is a React library that allows you to build in an easy way your search application.
-Read more
+This simple search engine UI extends [React-SearchKit](https://inveniosoftware.github.io/react-searchkit/docs/getting-started) (a free software; which we can redistribute it and/or modify it under the terms of the MIT License)
 
 Main features:
 
