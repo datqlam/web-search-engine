@@ -1,10 +1,4 @@
-<!--
-  This file is part of React-SearchKit.
-  Copyright (C) 2018-2019 CERN.
-
-  React-SearchKit is free software; you can redistribute it and/or modify it
-  under the terms of the MIT License; see LICENSE file for more details.
--->
+This simple search engine UI extends React-SearchKit(https://inveniosoftware.github.io/react-searchkit/docs/getting-started) (a free software; which we can redistribute it and/or modify it under the terms of the MIT License; see LICENSE file for more details.)
 
 # React-SearchKit
 
